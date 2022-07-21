@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+ flex: 0.25;
+ width: 200px;
+    height: 100vh;
+    position: fixed;
+    bottom:0;
+    background-color: #2f3135 ;
+    border-right: 1px solid rgb(80, 79, 79);
+}
+
+.sidebar_top
+{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: #2f3135;
+color: azure;
+border-bottom: 3px solid #26281c;
+
+
+}
+.sidebar_channel
+{
+    flex: 1;
+}
+.sidebar_addChannel{
+    cursor: pointer;
+}
+.sidebar_addChannel:hover{
+    color: white;
+}
+.sidebar_channelsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color: gray;
+
+}
+
+
+.sidebar_header{
+    display: flex;
+    align-items: center;
+    
+
+}
+.sidebar_header{
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar_voice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    color:gray;
+    height: 60px;
+    /* margin-top: 200px; */
+    /* position: fixed;      */
+    /* bottom:0; */
+    /* width: 100%; */
+
+    background-color: #2f3135;
+    /* padding:10px; */
+
+    border-top: 1px solid gray;
+
+}
+.sidebar_voiceIcon{
+color: green;
+padding: 5px;
+}
+.sidebar_voiceInfo{
+    flex: 1;
+   
+}
+.sidebar_voiceInfo >h3{
+    color: #4fb185;
+}
+.sidebar_voiceIcons{
+
+        /* color: #4fb185; */
+        /* font-size: 5px; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+
+}
+
+.sidebar_profile
+{
+
+padding: 5px;
+display: flex;
+border-top: 1px solid gray;
+align-items: center;
+
+color: grey;
+
+
+}
+
+
+.profileIcon
+{
+    display: flex;
+    margin-left: 25px;
+    
+    color: grey;
+}
+
+.bottom{
+
+    position: fixed;
+    bottom: 0;
+
+}
+
+
