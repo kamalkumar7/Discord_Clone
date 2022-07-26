@@ -5,6 +5,7 @@
     align-items: center;
     color: gray;
     padding: 10px;
+    border-bottom: 2px solid rgb(65, 63, 63);
 
 }
 .chatHeader_right{

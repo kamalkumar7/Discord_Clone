@@ -66,7 +66,8 @@ function Sidebar()
            <p>Stream</p>
          </div>
 
-         <div className="sidebar_voiceIcons"  >
+         <div className="sidebar_voiceIcons" >
+
             <InfoOutlinedIcon className='voiceicon' style={{fontSize:"20px"}}/>
             <CallIcon className='voiceicon' style={{fontSize:"20px"}}/>
          </div>
@@ -76,7 +77,7 @@ function Sidebar()
          </div>
 
       <div className="sidebar_profile">
-      <Avatar src='https://www.koimoi.com/bollywood-news/when-hrithik-roshan-was-trolled-for-calling-india-youngest-democracy-amid-controversial-caa-protests/'/>
+      <Avatar src=''/>
       
       <div className='sidebar-profileInfo'>
         <h3>

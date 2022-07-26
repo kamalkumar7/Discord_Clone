@@ -1,0 +1,32 @@
+.chatMessage_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    display: 
+    flex
+    ;
+    
+    padding: 10px;
+    align-items: center;
+}
+
+.message_info{
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.message_time{
+    font-size: smaller;
+    font-weight:300;
+    color: rgb(188, 175, 160);
+    padding-left: 10px;
+}
+
+.actual_message{
+    color: grey;
+}
+.sender_name{
+    font-size: smaller;
+}

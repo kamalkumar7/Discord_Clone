@@ -26,6 +26,7 @@ border-bottom: 3px solid #26281c;
 
 
 }
+
 .sidebar_channel
 {
     flex: 1;
@@ -79,7 +80,7 @@ border-bottom: 3px solid #26281c;
 }
 .sidebar_voiceIcon{
 color: green;
-padding: 5px;
+padding: 15px;
 }
 .sidebar_voiceInfo{
     flex: 1;
