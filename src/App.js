@@ -1,37 +1,47 @@
-import React from 'react'
-// import {Counter} from './features/Counter';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import Sidebar from './Sidebar';
 
-import Chat from './Chat'
-import {useSelector} from "react-redux"
-import Login from './Login';
-import Loginn from './Loginn';
-import {selectUser} from "./features/userSlice"
+import Sidebar from './components/Sidebar';
+import Chat from './components/Chat';
+import Login from './components/Login';
 
-function App() 
-{
-  const user = useSelector(selectUser)
+import { auth } from './firebase';
+import { login, logout, selectUser } from './slice/userSlice';
+
+function App() {
+  const dispatch = useDispatch();
+  const user = useSelector(selectUser);
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        dispatch(
+          login({
+            uid: authUser.uid,
+            photo: authUser.photoURL,
+            email: authUser.email,
+            displayName: authUser.displayName,
+          })
+        );
+      } else {
+        dispatch(logout());
+      }
+    });
+  }, [dispatch]);
+
   return (
-    <div className='App'>
-        {user?(
-          <>
-                 <Sidebar className='sidebar_main'/>       
-                 <Chat className='chat_main'/>      
-          </>
-        ):
+    <div className="app">
+      {user ? (
         <>
-        <h1>
-          <Loginn/>
-        </h1>
-      </>
-        }
-
-       
- 
-    
+          <Sidebar />
+          <Chat />
+        </>
+      ) : (
+        <Login />
+      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

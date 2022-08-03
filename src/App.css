@@ -1,11 +1,3 @@
-.App{
-    display: flex;
-    flex: 1;
-}
-
-.sidebar_main{
-flex: 0.25;
-}
-.chat_main{
-flex: 0.75;
+.app {
+  display: flex;
 }

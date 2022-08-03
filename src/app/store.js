@@ -1,19 +1,11 @@
-// import React from 'react'
-import { configureStore} from '@reduxjs/toolkit';
-import { userSlice } from '../features/userSlice';
-import { userReducer } from '../features/userSlice';
-import { appReducer } from '../features/appSlice';
- 
-import { appSlice } from '../features/appSlice';
+import { configureStore } from '@reduxjs/toolkit';
 
+import appReducer from '../slice/appSlice';
+import userReducer from '../slice/userSlice';
 
-const store=configureStore({
-  reducer:{
-      user:userSlice.reducer,
-      app:appSlice.reducer,  
-  }
-}
-);
-  
-
-export default store
+export default configureStore({
+  reducer: {
+    app: appReducer,
+    user: userReducer,
+  },
+});
